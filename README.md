@@ -39,7 +39,7 @@ npm install -g demo-zijie-package
 ```
 运行命令测试，其中可选参数 --depth= 为遍历深度默认最大; --json= 为是否只生成json文件,此时将不会打开网页
 ```sh
-npm install -g demo-zijie-package analyze --depth=2 --json='depedency.json'
+dependency-graph analyze --depth=2 --json='depedency.json'
 ```
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
