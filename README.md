@@ -23,22 +23,24 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
+打包vue项目，生成dist文件夹，将其放在node_project文件夹下
 ```sh
 npm run build
 ```
 
+### Run 
+发布插件，确保你有npm账号并已登录
+```sh
+npm publish
+```
+在自己的项目安装插件
+```sh
+npm install -g demo-zijie-package
+```
+运行命令测试，其中可选参数 --depth= 为遍历深度默认最大; --json= 为是否只生成json文件,此时将不会打开网页
+```sh
+npm install -g demo-zijie-package analyze --depth=2 --json='depedency.json'
+```
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
 
 ```sh
